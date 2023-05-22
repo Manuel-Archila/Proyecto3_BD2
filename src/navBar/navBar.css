@@ -1,0 +1,36 @@
+.navBar {
+    background-color: #112240;
+    overflow: hidden;
+    max-width: 70px;
+    width: 70px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.navBar__icon {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    margin-bottom: 60px;
+}
+
+.navBar__icon:hover {
+    cursor: pointer;
+}
+
+.navBar__icon img {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}

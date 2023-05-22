@@ -1,0 +1,56 @@
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    background-color: #0a192f;
+    color: #ccd6f6;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.titulo {
+    margin-top: 50px;    
+    font-size: 60px;
+    color: rgb(215, 219, 221);
+    width: auto;
+    height: auto;
+}
+
+.subtitulo {
+    align-self: flex-start;
+    margin-top: 20px;
+    margin-left: 150px;
+    font-size: 45px;
+    color: rgb(215, 219, 221);
+    width: auto;
+    height: auto;
+}
+
+.separador{
+    border-top: 2px solid rgb(54, 78, 67);
+    height: 5px;
+    width: 85%;
+    padding: 0;
+    margin: 20px auto 0 auto;
+    background-color: #64ffda;
+}
+
+.productos-container{
+    margin-left: 20%;
+    display:flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+}
+
+
+.pedidos-container{
+    display:flex;
+    flex-direction: column;
+    height: auto;
+}
+

@@ -1,0 +1,132 @@
+.pedido-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    background-color: #0a192f;
+    color: #ccd6f6;
+}
+
+.separador{
+    border-top: 2px solid rgb(54, 78, 67);
+    height: 2.5px;
+    width: 85%;
+    padding: 0;
+    margin: 20px auto 0 auto;
+    background-color: #64ffda;
+}
+
+.pedido-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    margin-top: 50px;
+    height: auto;
+    background-color: #0a192f;
+    color: #ccd6f6;
+}
+
+.pedido-form-item-btn {
+    margin: 20px auto 0 auto;
+    width: auto;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2.5px solid #64ffda;
+    color: #64ffda;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0;
+}
+
+.pedido-form-item-btn button:hover {
+    background-color: #64ffda;
+    color: #0a192f;
+}
+
+.pedido-form-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    height: auto;
+    margin: 10px auto 25px auto;
+    padding: 0;
+    background-color: #0a192f;
+    color: #ccd6f6;
+}
+
+.pedido-form-item-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: auto;
+    margin: 10px auto 0 auto;
+    padding: 10px;
+    background-color: #0a192f;
+    color: #ccd6f6;
+}
+
+.pedido-form-item-list h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.pedido-form-item-list ul {
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+}
+
+.pedido-form-item-list ul li {
+    margin: 0;
+    padding: 7px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.pedido-form select {
+    width: 40%;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f4068;
+    color: #ccd6f6;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.pedido-form input {
+    width: 40%;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f4068;
+    color: #ccd6f6;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+}
