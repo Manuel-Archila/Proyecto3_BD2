@@ -8,6 +8,8 @@
     padding: 0;
     background-color: #0a192f;
     color: #ccd6f6;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .separador{
@@ -16,6 +18,14 @@
     width: 85%;
     padding: 0;
     margin: 20px auto 0 auto;
+    background-color: #64ffda;
+}
+
+.separador-producto{
+    border-top: 2px solid rgb(54, 78, 67);
+    height: 2.5px;
+    width: 55%;
+    margin: 20px auto 20px auto;
     background-color: #64ffda;
 }
 
@@ -47,7 +57,65 @@
     margin: 0;
 }
 
-.pedido-form-item-btn button:hover {
+.selected-button {
+    margin: 20px auto 0 auto;
+    width: auto;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #64ffda;
+    border: 2.5px solid #64ffda;
+    color: #0a192f;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0;
+}
+
+.pedido-form-item-btn:hover {
+    background-color: #64ffda;
+    color: #0a192f;
+}
+
+.pedido-form-item-btn-agregar {
+    margin: 20px auto 0 auto;
+    width: 20%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2.5px solid #64ffda;
+    color: #64ffda;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 5px;
+    margin: 20px auto 10px auto;
+}
+
+.pedido-form-item-btn-agregar:hover {
+    background-color: #64ffda;
+    color: #0a192f;
+}
+
+.pedido-form-item-btn-crear {
+    margin: 20px auto 0 auto;
+    width: 30%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2.5px solid #64ffda;
+    color: #64ffda;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 5px;
+    margin: 20px auto 50px auto;
+}
+
+.pedido-form-item-btn-crear:hover {
     background-color: #64ffda;
     color: #0a192f;
 }

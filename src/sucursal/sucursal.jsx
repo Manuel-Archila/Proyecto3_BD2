@@ -17,7 +17,7 @@ const Sucursal = ({sucursal, setSucursal}) => {
             <div className='description'>Categoria: {sucursal.categoria}</div>
             <div className='description'>Direccion: {sucursal.direccion}</div>
             <div className='description'>Telefono: {sucursal.telefono}</div>
-            <div className='description'>NIT: {sucursal.NIT}</div>
+            <div className='description'>NIT: {sucursal.nit}</div>
         </div>
 
 
