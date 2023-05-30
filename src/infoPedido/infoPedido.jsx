@@ -90,7 +90,10 @@ const InfoPedido = ({pedido, setEliminado, eliminado, sucursal}) => {
 
             <div className='iconos'>
                 <div className='eliminar' onClick={()=> eliminarPedido()}/>
-                <div className='entregado' onClick={()=> setEntregado()}/>
+                {
+                    !pedido.pedido.cancelado &&
+                    <div className='entregado' onClick={()=> setEntregado()}/>
+                }
                 <div className='calificacion' onClick={()=> calificar()}/>
             </div>
             <div className='cont'>

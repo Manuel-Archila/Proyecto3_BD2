@@ -238,7 +238,7 @@ const Infosucursal = ({sucursal, setSucursal}) => {
                             Persona:
                             <select
                               name='persona'
-                              value={nuevoEmpleado.persona}
+                              value={persona}
                               onChange={(e) => setPersona(e.target.value)}
                             >
                               <option value=''>Seleccionar persona</option>

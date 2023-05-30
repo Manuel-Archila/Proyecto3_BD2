@@ -16,6 +16,7 @@ const Home = ({setSucursal}) => {
   const [productos, setProductos] = useState([])
   const [productosAPI, setProductosAPI] = useState([])
   const [producto, setProducto] = useState('')
+  const [servicio, setServicio] = useState("")
 
   const getSucursales = async() => {
     const url = 'http://localhost:5000/api/sucursales'
@@ -59,7 +60,8 @@ const Home = ({setSucursal}) => {
         "nit": nit,
         "categoria": categoria,
         "telefono": telefono,
-        "productos": productos
+        "productos": productos,
+        "servicio": servicio,
       })
     })
     
@@ -143,6 +145,10 @@ const Home = ({setSucursal}) => {
                 <div className='field-container'>
                   <div>Telefono:</div>
                   <input type="text" className='field' onChange={(e) => setTelefono(e.target.value)}/>
+                </div>
+                <div className='field-container'>
+                  <div>Nombre del Servicio:</div>
+                  <input type="text" className='field' onChange={(e) => setServicio(e.target.value)}/>
                 </div>
               </div>
               <div className='separador-producto'/>

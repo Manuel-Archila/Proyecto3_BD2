@@ -43,9 +43,9 @@ const Pedidos = () => {
     const [tamaño, setTamaño] = useState('')
     const [tamaños, setTamaños] = useState([])
     const tamañosList = ['pequeño', 'mediano', 'grande']
-    const [medioCompra, setMedioCompra] = useState('')
+    const [medioCompra, setMedioCompra] = useState('En linea')
     const [metodoEnvio, setMetodoEnvio] = useState('')
-    const [metodosEnvio, setMetodosEnvio] = useState(['uber'])
+    const [metodosEnvio, setMetodosEnvio] = useState([])
     const [metodoPago, setMetodoPago] = useState('')
     const [metodosPago, setMetodosPago] = useState(['tarjeta', 'efectivo'])
     const [contacto, setContacto] = useState('')
