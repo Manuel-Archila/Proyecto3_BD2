@@ -190,19 +190,8 @@ const Pedidos = () => {
     }
 
     const hacerPedido = async() => {
-        console.log(persona, 'persona')
-        console.log(direccion, 'direccion')
-        console.log(productosPedido, 'productos')
-        console.log(presentaciones, 'presentaciones')
-        console.log(descuento, 'descuento')
-        console.log(cantidades, 'cantidades')
-        console.log(tamaños, 'tamaños')
-        console.log(medioCompra, 'mediocompra')
-        console.log(metodoEnvio, 'metodo envio')
-        console.log(metodoPago, 'metodo pago')
-        console.log(contacto, 'contacto')
-        console.log(moneda, 'moneda')
-        console.log(sucursal, 'sucursal')
+        const tiempo = Math.round(Math.random() * (72 - 10) + 10);
+        const texto = tiempo.toString() + ' hrs'
 
         const url = 'http://localhost:5000/api/sucursal_pedidos'
         const response = await fetch(url, {
@@ -220,13 +209,11 @@ const Pedidos = () => {
             'cantidades': cantidades,
             'tamaños': tamaños,
             'mediocompra': medioCompra,
-            'fecha_orden': "hoy",
-            'fecha_entrega': "mañana",
             'metodo_envio': "servicio",
             'cancelado': "false",
             'sucursal': sucursal,
             'servicio_mensajeria': metodoEnvio,
-            'tiempo_de_preparacion': "72 hrs",
+            'tiempo_de_preparacion': texto,
             'metodo_pago': metodoPago,
             'contacto': contacto,
             'moneda': moneda

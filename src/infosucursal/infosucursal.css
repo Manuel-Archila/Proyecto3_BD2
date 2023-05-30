@@ -45,6 +45,12 @@
     flex-direction: row;
     height: auto;
     width: 100%;
+    font-size: 19px;
+}
+
+.producto-container{
+    /* is li component */
+    display: flex;
 }
 
 
@@ -54,3 +60,109 @@
     height: auto;
 }
 
+.subtitulo-icono {
+    display:flex;
+    flex-direction: row;
+    align-self: flex-start;
+    margin-top: 20px;
+    margin-left: 150px;
+    font-size: 45px;
+    color: rgb(215, 219, 221);
+    width: auto;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.icono {
+    background-image: url("../assets/mas.png");
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+
+.icono:hover{
+    cursor: pointer;
+}
+
+.modal1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+.modal1-contenido {
+    background-color: rgb(19, 43, 78);
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+.modal1-contenido h2 {
+    margin-top: 0;
+}
+
+.modal1-contenido form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal1-contenido label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+.modal1-contenido input[type="checkbox"] {
+    margin-top: 0;
+}
+
+.modal1-contenido button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #2a77ca;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.modal1-contenido input {
+    width: 50%;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f4068;
+    color: #ccd6f6;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.modal1-contenido select {
+    width: 80%;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f4068;
+    color: #ccd6f6;
+    font-size: 1rem;
+    font-weight: 400;
+}

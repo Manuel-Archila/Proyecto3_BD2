@@ -1,4 +1,4 @@
-.container1{
+.container11{
     display: flex;
     flex-direction: column;
     width: 75vw;
@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    margin-bottom: 100px;
 }
 .cont{
     display: flex;
@@ -75,20 +76,37 @@
     cursor: pointer;
 }
 
-.entregado {
-    background-image: url('../assets/recoger.png');
+.iconos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.activo {
+    background-image: url('../assets/ojo.png');
     background-size: cover;
     background-position: center;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     margin: 10px 50px 40px 0px;
     align-self: flex-end;
 }
 
-.entregado:hover{
+.activo:hover{
     cursor: pointer;
 }
 
+.inactivo {
+    background-image: url('../assets/ojos-cruzados.png');
+    background-size: cover;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    margin: 10px 50px 40px 0px;
+    align-self: flex-end;
+}
 
-
-
+.inactivo:hover{
+    cursor: pointer;
+}
