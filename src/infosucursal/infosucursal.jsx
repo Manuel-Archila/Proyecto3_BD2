@@ -210,7 +210,7 @@ const Infosucursal = ({sucursal, setSucursal}) => {
             <div className='pedidos-container'>
                 {
                     pedidos.map((pedido, index) => (
-                        <InfoPedido key={index} pedido={pedido} setEliminado={setEliminado} eliminado = {eliminado}/>
+                        <InfoPedido key={index} pedido={pedido} setEliminado={setEliminado} eliminado = {eliminado} sucursal={sucursal.nombre}/>
                         ))
                 }
             </div>

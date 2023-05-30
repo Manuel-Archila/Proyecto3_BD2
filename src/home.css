@@ -48,25 +48,33 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    
   }
 
   .modalin {
     width: 75%;
-    height: 75%;
+    height: auto;
+    max-height: 90%;
     background-color: #0a192f;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 4px;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
 
   .close-button{
     width: 30px;
     height: 30px;
+    min-width: 30px;
+    min-height: 30px;
     background-image:url(./assets/cruz.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     align-self: flex-end;
     cursor:pointer;
+    margin: 10px 10px 10px 0;
   }
 
   .modalin-header{
@@ -81,7 +89,8 @@
     align-items: center;
     justify-content: space-around;
     width: 500px;
-    height: 325px;
+    height: 100%;
+    
   }
 
   .field-container{
@@ -90,6 +99,7 @@
     justify-content: space-between;
     width: 300px;
     height: 25px;
+    margin: 15px 0 0 0;
   }
 
   .field-container input {
@@ -149,3 +159,63 @@
 }
 
   
+.modal-form-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  height: auto;
+  margin: 10px auto 25px auto;
+  padding: 0;
+  background-color: #0a192f;
+  color: #ccd6f6;
+}
+
+.modal-form-item select {
+  width: 40%;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #1f4068;
+  color: #ccd6f6;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.modal-form-item label {
+  margin-right: 40px;
+}
+
+.modal-form input {
+  width: 40%;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #1f4068;
+  color: #ccd6f6;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.modal-form-item-btn-agregar {
+  width: 20%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 2.5px solid #64ffda;
+  color: #64ffda;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.modal-form-item-btn-agregar:hover {
+  background-color: #64ffda;
+  color: #0a192f;
+}
